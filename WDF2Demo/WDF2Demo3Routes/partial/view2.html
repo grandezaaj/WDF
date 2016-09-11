@@ -1,0 +1,15 @@
+﻿<h1>View 2</h1>
+
+<div>
+    Name: <input type="text" ng-model="name" />
+    <br />
+    {{name}}
+</div>
+<br />
+<div>
+    <ul>
+        <li ng-repeat="c in customers | filter:name">{{c.name}} - {{c.country}}</li>
+    </ul>
+</div>
+
+<a href="#/">View 1</a>

@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>View and Controller</title>
+</head>
+<body >
+    <div data-ng-controller="SimpleController">
+        <ul>
+            <li ng-repeat="s in students | filter:name">{{s.name}} - {{s.city}}</li>
+        </ul>
+    </div>
+
+    <script src="~/Scripts/angular.min.js"></script>
+
+    <script>
+        function SimpleController($scope) {
+            $scope.students = [
+                { name: 'Bill', city: 'Davao' },
+                { name: 'Steve', city: 'Cebu' },
+                { name: 'Mark', city: 'Manila' },
+                { name: 'Larry', city: 'Makati' }
+            ];
+        }
+
+    </script>
+
+</body>
+</html>

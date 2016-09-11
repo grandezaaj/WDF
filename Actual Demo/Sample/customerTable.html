@@ -1,0 +1,27 @@
+﻿<h2>Customers</h2>
+<br />
+        Search: <input type="text" ng-model="searchText" />
+<br />
+<br />
+<a href="#/add">Add New</a>
+<br />
+<br />
+<table border="1">
+    <thead>
+    <th>Id</th>
+    <th>Contact Name</th>
+    <th>Country</th>
+    <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="c in customers | filter:searchText | orderBy:'contactName'">
+            <td>{{c.customerID}}</td>
+            <td>{{c.contactName}}</td>
+            <td>{{c.country}}</td>
+            <td>
+                <a href="#/update/{{c.customerID}}">Edit</a>
+                <a ng-click="delete(c.customerID)" href="">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

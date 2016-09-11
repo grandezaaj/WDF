@@ -1,0 +1,12 @@
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\NorthwindDemo.exe.config
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\NorthwindDemo.exe
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\NorthwindDemo.pdb
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\EntityFramework.dll
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\EntityFramework.SqlServer.dll
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\StudentsData.dll
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\StudentsData.pdb
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\EntityFramework.xml
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\bin\Debug\EntityFramework.SqlServer.xml
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\obj\Debug\NorthwindDemo.csprojResolveAssemblyReference.cache
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\obj\Debug\NorthwindDemo.exe
+d:\aj\documents\visual studio 2015\Projects\StudentsData\NorthwindDemo\obj\Debug\NorthwindDemo.pdb

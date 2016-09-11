@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="demoApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Module</title>
+</head>
+<body>
+    @* Placeholder for all views *@
+    <div ng-view></div>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+
+    <script>
+
+        var demoApp = angular.module('demoApp', ['ngRoute']);
+
+
+        demoApp.config(function ($routeProvider) {
+            $routeProvider
+                .when('/',
+                {
+                    controller: 'SimpleController',
+                    templateUrl: 'partial/view1.html'
+                })
+                .when('/view2',
+                {
+                    controller: 'SimpleController2',
+                    templateUrl: 'partial/view2.html'
+                })
+                .when('/view3',
+                {
+                    controller: 'SimpleController3',
+                    templateUrl: 'partial/view3.html'
+                })
+                .otherwise({ redirectTo: '/' })
+        });
+
+        demoApp.controller('SimpleController', function ($scope) {
+            $scope.form = {};
+
+
+            $scope.students = [
+                { name: 'Bill', city: 'Davao' },
+                { name: 'Steve', city: 'Cebu' },
+                { name: 'Mark', city: 'Manila' },
+                { name: 'Larry', city: 'Makati' }
+            ];
+
+
+            $scope.addStudent = function () {
+                $scope.students.push({
+                    name: $scope.form.name,
+                    city: $scope.form.city
+                });
+            }
+        });
+
+        demoApp.controller('SimpleController2', function ($scope) {
+            $scope.customers = [
+                { name: 'Rody', country: 'Davao' },
+                { name: 'Barrack', country: 'Cebu' },
+                { name: 'Widodo', country: 'Manila' },
+                { name: 'Kim Jong Un', country: 'Makati' }
+            ];
+        });
+
+        demoApp.service('demoService', function () {
+            return {
+                getCustomers: function () {
+                    var customers = [
+                        { name: 'Rody', country: 'Davao' },
+                        { name: 'Barrack', country: 'Cebu' },
+                        { name: 'Widodo', country: 'Manila' },
+                        { name: 'Kim Jong Un', country: 'Makati' }];
+
+                    return customers;
+                }
+            }
+        });
+
+
+
+        demoApp.controller('SimpleController3', function ($scope, demoService) {
+            $scope.customers = demoService.getCustomers();
+        });
+    </script>
+
+</body>
+</html>

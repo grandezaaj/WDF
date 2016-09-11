@@ -1,0 +1,9 @@
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\NorthwindData.dll.config
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\NorthwindData.dll
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\NorthwindData.pdb
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\EntityFramework.dll
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\EntityFramework.SqlServer.dll
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\EntityFramework.xml
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\bin\Release\EntityFramework.SqlServer.xml
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\obj\Release\NorthwindData.dll
+D:\AJ\Documents\Visual Studio 2015\Projects\StudentsData\NorthwindData\obj\Release\NorthwindData.pdb

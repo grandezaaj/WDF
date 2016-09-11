@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>WDF 2 Demo - Filters</title>
+</head>
+<body ng-init="students=[
+      {name:'Bill', city: 'Davao'},
+      {name:'Steve', city: 'Cebu'},
+      {name:'Mark', city:'Manila'},
+      {name: 'Larry', city: 'Makati'}]">
+
+
+    <div>
+        Name: <input type="text" ng-model="name" />
+        <br />
+        {{name}}
+    </div>
+    <br />
+    <div>
+        <h3>Filter</h3>
+        <ul>
+            <li ng-repeat="s in students | filter:name">{{s.name}} - {{s.city}}</li>
+        </ul>
+
+        <h3>Filter with orderBy</h3>
+        <ul>
+            <li ng-repeat="s in students | filter:name | orderBy: 'city'">{{s.name}} - {{s.city}}</li>
+        </ul>
+
+        <h3>Filter with uppercase & lowercase</h3>
+        <ul>
+            <li ng-repeat="s in students | filter:name">{{s.name | uppercase}} - {{s.city | lowercase}}</li>
+        </ul>
+    </div>
+    
+
+
+
+    <script src="~/Scripts/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<h2>View 1</h2>
+
+<div>
+    Name: <input type="text" ng-model="name" />
+    <br />
+    {{name}}
+</div>
+<br />
+<div>
+    <ul>
+        <li ng-repeat="s in students | filter:name">{{s.name}} - {{s.city}}</li>
+    </ul>
+</div>
+<br />
+<div>
+    <h3>Add Student</h3>
+    Name: <input type="text" ng-model="form.name" />
+    <br />
+    City: <input type="text" ng-model="form.city" />
+    <br />
+    <button ng-click="addStudent()">Add Student</button>
+</div>
+<br />
+<a href="#/view2">View 2</a>
